@@ -1,4 +1,4 @@
-# Todolist v1.0 vith React
+# Todolist v1.0 with React
 ![Todolist App](https://piaszczykstudio.pl/wp-content/uploads/2023/02/todolist-app.gif)
 
 # Description / Opis
