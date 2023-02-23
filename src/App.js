@@ -5,14 +5,21 @@ import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
 import Footer from "./Footer";
+import { useState } from "react";
 
 const tasks = [
-    { id: 1, content: "test", done: false },
+    { id: 1, content: "test", done: true },
     { id: 2, content: "test2", done: false },
 ];
 
-const hideDone = false;
+
 function App() {
+    const [hideDone, setHideDone] = useState(false);
+
+    const toggleHideDone = () => {
+        setHideDone(hideDone => !hideDone);
+    };
+
     return (
         <Container>
             <Header title="Lista zadań - Todolist" />
@@ -22,8 +29,17 @@ function App() {
             />
             <Section
                 title="Lista twoich zadań"
-                body={<Tasks tasks={tasks} hideDone={hideDone} />}
-                plusHeaderContent={<Buttons tasks={tasks} hideDone={hideDone} />}
+                body={
+                    <Tasks
+                        tasks={tasks}
+                        hideDone={hideDone} />
+                }
+                plusHeaderContent={
+                    <Buttons
+                        tasks={tasks}
+                        hideDone={hideDone}
+                        toggleHideDone={toggleHideDone} />
+                }
             />
             <Footer
                 footer="Lista zadań - Todolist HTML/CSS/JS &copy; 2023 created by"
