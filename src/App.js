@@ -4,7 +4,7 @@ import Tasks from "./Tasks";
 import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
-import Conteiner from "./Conteiner";
+import Container from "./Container";
 import Footer from "./Footer";
 
 const tasks = [
@@ -15,7 +15,7 @@ const tasks = [
 const hideDoneTask = false;
 function App() {
     return (
-        <Conteiner>
+        <Container>
             <Header title="Lista zadań - Todolist" />
             <Section
                 title="Dodaj nowe zadanie"
@@ -31,7 +31,7 @@ function App() {
                 link="https://github.com/MateuszPiaszczyk"
                 author=" Mateusz Piaszczyk"
             />
-        </Conteiner>
+        </Container>
     );
 }
 
