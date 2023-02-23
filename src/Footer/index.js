@@ -5,7 +5,7 @@ const Footer = ({footer, link, author}) => (
     <footer className="footer">
         {footer}
         <a className="footer__link" href={link}>
-         {author}
+          {author}
         </a>
     </footer>
 );

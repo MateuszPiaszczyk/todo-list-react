@@ -1,10 +1,9 @@
-import React from "react";
 import "./style.css";
 
 const Buttons = ({ tasks, hideDoneTask }) => (
     <div className="buttons">
         {tasks.length > 0 && (
-            <React.Fragment>
+            <>
                 <button
                     className="buttons__button"
                 >
@@ -16,7 +15,7 @@ const Buttons = ({ tasks, hideDoneTask }) => (
                 >
                     Zakończ wszystkie
                 </button>
-            </React.Fragment>
+            </>
         )}
     </div>
 
