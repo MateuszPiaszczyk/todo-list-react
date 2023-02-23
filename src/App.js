@@ -7,11 +7,11 @@ import Container from "./Container";
 import Footer from "./Footer";
 
 const tasks = [
-    { id: 1, content: "test", done: true },
+    { id: 1, content: "test", done: false },
     { id: 2, content: "test2", done: false },
 ];
 
-const hideDoneTask = false;
+const hideDone = false;
 function App() {
     return (
         <Container>
@@ -22,8 +22,8 @@ function App() {
             />
             <Section
                 title="Lista twoich zadań"
-                body={<Tasks tasks={tasks} hideDoneTask={hideDoneTask} />}
-                plusHeaderContent={<Buttons tasks={tasks} hideDoneTask={hideDoneTask} />}
+                body={<Tasks tasks={tasks} hideDone={hideDone} />}
+                plusHeaderContent={<Buttons tasks={tasks} hideDone={hideDone} />}
             />
             <Footer
                 footer="Lista zadań - Todolist HTML/CSS/JS &copy; 2023 created by"
