@@ -7,18 +7,26 @@ import Container from "./Container";
 import Footer from "./Footer";
 import { useState } from "react";
 
-const tasks = [
-    { id: 1, content: "test", done: true },
-    { id: 2, content: "test2", done: false },
-];
+
 
 
 function App() {
     const [hideDone, setHideDone] = useState(false);
+    const [tasks, setTasks] = useState([
+        { id: 1, content: "test", done: true },
+        { id: 2, content: "test2", done: false },
+
+    ]);
 
     const toggleHideDone = () => {
         setHideDone(hideDone => !hideDone);
     };
+
+    const removeTask = (id) => {
+        setTasks(tasks => tasks.filter(task => task.id !== id));
+    };
+
+
 
     return (
         <Container>
@@ -32,7 +40,8 @@ function App() {
                 body={
                     <Tasks
                         tasks={tasks}
-                        hideDone={hideDone} />
+                        hideDone={hideDone}
+                        removeTask={removeTask} />
                 }
                 plusHeaderContent={
                     <Buttons
