@@ -13,8 +13,9 @@ import { useState } from "react";
 function App() {
     const [hideDone, setHideDone] = useState(false);
     const [tasks, setTasks] = useState([
-        { id: 1, content: "test", done: true },
-        { id: 2, content: "test2", done: false },
+        { id: 1, content: "Przenieść Listę zadań doReactJS", done: true },
+        { id: 2, content: "ukończyć kurs Youcode.pl", done: false },
+        
 
     ]);
 
