@@ -7,16 +7,12 @@ import Container from "./Container";
 import Footer from "./Footer";
 import { useState } from "react";
 
-
-
-
 function App() {
     const [hideDone, setHideDone] = useState(false);
     const [tasks, setTasks] = useState([
         { id: 1, content: "Przenieść Listę zadań doReactJS", done: true },
         { id: 2, content: "ukończyć kurs Youcode.pl", done: false },
         
-
     ]);
 
     const toggleHideDone = () => {
