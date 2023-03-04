@@ -5,15 +5,21 @@ import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
 import Footer from "./Footer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
+const getInitialTasks = () => {
+    const taskFromLocalStorage = localStorage.getItem("tasks");
+    return taskFromLocalStorage
+        ? JSON.parse(taskFromLocalStorage)
+        : []
+};
 function App() {
     const [hideDone, setHideDone] = useState(false);
-    const [tasks, setTasks] = useState([
-        { id: 1, content: "Przenieść Listę zadań doReactJS", done: true },
-        { id: 2, content: "ukończyć kurs Youcode.pl", done: false },
-        
-    ]);
+    const [tasks, setTasks] = useState(getInitialTasks);
+
+    useEffect(() => {
+        localStorage.setItem("tasks", JSON.stringify(tasks));
+    }, [tasks]);
 
     const toggleHideDone = () => {
         setHideDone(hideDone => !hideDone);
@@ -35,7 +41,7 @@ function App() {
     const setAllDone = () => {
         setTasks(tasks => tasks.map(task => ({
             ...task,
-            done:true,
+            done: true,
         })));
     };
 
@@ -55,7 +61,7 @@ function App() {
             <Header title="Lista zadań - Todolist" />
             <Section
                 title="Dodaj nowe zadanie"
-                body={<Form addNewTask={addNewTask}/>}
+                body={<Form addNewTask={addNewTask} />}
             />
             <Section
                 title="Lista twoich zadań"
