@@ -1,13 +1,13 @@
 import React from "react";
-import "./style.css";
+import { StyledFooter, Link } from "./styled";
 
 const Footer = ({footer, link, author}) => (
-    <footer className="footer">
+    <StyledFooter>
         {footer}
-        <a className="footer__link" href={link}>
+        <Link href={link}>
           {author}
-        </a>
-    </footer>
+        </Link>
+        </StyledFooter>
 );
 
 export default Footer;
