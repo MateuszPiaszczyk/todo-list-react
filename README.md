@@ -16,13 +16,13 @@ Dodano przyciski. ukryj ukończone/wyświetl ukonczońe i zakończ wszystkie zad
 
 # Technologies and practices used / Technologie i praktyki
 1. BEM
-2. CSS
 3. JS
 4. HTML
 5. NORMALIZE
 6. ES6 + feutures
 7. Immuntabbility
 8. React
+9. Styled Components
 # Demo Link
 https://mateuszpiaszczyk.github.io/todo-list-react/
 
