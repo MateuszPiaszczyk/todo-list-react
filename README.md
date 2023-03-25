@@ -23,6 +23,7 @@ Dodano przyciski. ukryj ukończone/wyświetl ukonczońe i zakończ wszystkie zad
 7. Immuntabbility
 8. React
 9. Styled Components
+10. Redux
 # Demo Link
 https://mateuszpiaszczyk.github.io/todo-list-react/
 
