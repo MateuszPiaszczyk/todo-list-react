@@ -1,5 +1,5 @@
 import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
-import { Task } from "./features/tasks/Task";
+import Task from "./features/tasks/Task";
 
 export default () => (
     <BrowserRouter>
@@ -11,7 +11,7 @@ export default () => (
         </ul>
         <Switch>
             <Route path="/zadania">
-            <Task />
+            <Task/>
             </Route>
         </Switch>
     </nav>
