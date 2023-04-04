@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client';
 import { ThemeProvider } from 'styled-components';
 import { Provider } from 'react-redux';
 import { GlobalStyle } from './GlobalStyle';
-import Task from './features/tasks/Task';
 import reportWebVitals from './reportWebVitals';
 import { theme } from './theme';
 import store from './store';
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,7 +14,7 @@ root.render(
     <Provider store={store}>
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-    <Task />
+    <App />
     </ThemeProvider>
     </Provider>
   </React.StrictMode>
