@@ -4,7 +4,7 @@ import Container from "../../../common/Container";
 import Footer from "../../../common/Footer";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { getTaskById } from "../taskSlice";
+import { getTaskById } from "../tasksSlice";
 
 function TaskPage() {
   const { id } = useParams();
@@ -14,12 +14,13 @@ function TaskPage() {
     <Container>
       <Header title="Opis zadania" />
       <Section
-        title={task ? task.content : "Nie ma takiego zadania :("}
+        title={task ? task.content : "Nie ma takiego zadania 🥲"}
         body={
-          <>
-            <strong>Ukończone:</strong>
-            {" "}{task.done ? "Tak" : "Nie"}
-          </>
+          !!task && (
+            <>
+              <strong>Ukończone:</strong> {task.done ? "Tak" : "Nie"}
+            </>
+          )
         }
       />
       <Footer
