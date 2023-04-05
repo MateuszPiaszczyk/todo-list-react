@@ -12,6 +12,7 @@ export default () => {
         key: searchQueryParamName,
         value: target.value.trim() !== "" ? target.value : undefined,
      });
+     
   return (
     <Wrapper>
       <Input
