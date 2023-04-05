@@ -1,4 +1,5 @@
 import Container from "../../common/Container";
+import Footer from "../../common/Footer";
 import Header from "../../common/Header";
 import Section from "../../common/Section";
 
@@ -17,5 +18,10 @@ export default () => (
         </>
       }
     />
+    <Footer
+        footer="Lista zadań - Todolist HTML/CSS/JS &copy; 2023 created by"
+        link="https://github.com/MateuszPiaszczyk"
+        author=" Mateusz Piaszczyk"
+      />
   </Container>
 );
