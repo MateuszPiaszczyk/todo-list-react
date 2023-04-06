@@ -1,6 +1,4 @@
 import { useDispatch, useSelector } from "react-redux";
-import { NavLink } from "react-router-dom";
-
 import { toTask } from "../../../../routes";
 import {
   selectHideDone,
@@ -14,7 +12,8 @@ import {
   List, 
   Item, 
   Content, 
-  Button 
+  Button, 
+  StyledNavLink
 } from "./styled";
 
 const TaskList = () => {
@@ -32,7 +31,7 @@ const TaskList = () => {
             {task.done ? " ✓ " : ""}
           </Button>
           <Content done={task.done}>
-            <NavLink to={toTask({ id: task.id })}>{task.content}</NavLink>
+            <StyledNavLink to={toTask({ id: task.id })}>{task.content}</StyledNavLink>
           </Content>
           <Button remove onClick={() => dispatch(removeTask(task.id))}>
             🗑️
