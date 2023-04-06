@@ -1,5 +1,8 @@
 import Input from "../Input";
-import { useQueryParameter, useReplaceQueryParameter } from "../queryParameters";
+import {
+  useQueryParameter,
+  useReplaceQueryParameter,
+} from "../queryParameters";
 import searchQueryParamName from "../searchQueryParamName";
 import { Wrapper } from "./styled";
 
@@ -8,18 +11,18 @@ export default () => {
   const replaceQueryParameter = useReplaceQueryParameter();
 
   const onInputChange = ({ target }) => {
-     replaceQueryParameter ({
-        key: searchQueryParamName,
-        value: target.value.trim() !== "" ? target.value : undefined,
-     });
-     
-  return (
-    <Wrapper>
-      <Input
-        placeholder="Filtruj zadania"
-        value={query || ""}
-        onChange={onInputChange}
-      />
-    </Wrapper>
-  )};
-};
+    replaceQueryParameter({
+      key: searchQueryParamName,
+      value: target.value.trim() !== "" ? target.value : undefined,
+    });
+  };
+    return (
+      <Wrapper>
+        <Input
+          placeholder="Filtruj zadania"
+          value={query || ""}
+          onChange={onInputChange}
+        />
+      </Wrapper>
+    );
+  };
