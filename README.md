@@ -1,5 +1,5 @@
-# Todolist v1.0 with React
-![Todolist App](https://piaszczykstudio.pl/wp-content/uploads/2023/02/todolist-app.gif)
+# Todolist with React
+![Todolist App](https://piaszczykstudio.pl/wp-content/uploads/2023/04/todosfinalapp.gif)
 
 # Description / Opis
 ENG: Todo list application, based on HTML,CSS,JS and BEM, created as part of a youcode course and skills exercises.
@@ -24,6 +24,7 @@ Dodano przyciski. ukryj ukończone/wyświetl ukonczońe i zakończ wszystkie zad
 8. React
 9. Styled Components
 10. Redux
+11. React-Router
 # Demo Link
 https://mateuszpiaszczyk.github.io/todo-list-react/
 
