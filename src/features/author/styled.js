@@ -11,6 +11,10 @@ export const Wrapper = styled.div`
 
 export const Description = styled.div`
   line-height: 1.5;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const Strong = styled.strong`
@@ -23,7 +27,11 @@ export const Image = styled.img`
     max-width: 300px;
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+<<<<<<< HEAD
     max-width: 100%;
+=======
+    grid-template-columns: 1fr;
+>>>>>>> 702b64d9e2e76461c02e55db40cc8dc8e7b60cf8
   }
 `;
 
