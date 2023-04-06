@@ -1,10 +1,11 @@
 import Section from "../../../common/Section";
 import Header from "../../../common/Header";
-import Container from "../../../common/Container";
 import Footer from "../../../common/Footer";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { getTaskById } from "../tasksSlice";
+import { Container } from "../../../common/Section/styled";
+
 
 function TaskPage() {
   const { id } = useParams();

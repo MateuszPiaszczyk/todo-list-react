@@ -6,7 +6,8 @@ import Header from "../../../common/Header";
 import Footer from "../../../common/Footer";
 import Search from "./Search";
 import FetchExampleTaskButton from "./FetchExampleTaskButton";
-import Container from "../../../common/Container";
+import { Container } from "../../../common/Section/styled";
+
 
 function TasksPage() {
   return (

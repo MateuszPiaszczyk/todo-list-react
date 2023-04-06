@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+`;
+
 export const Wrapper = styled.section`
   background-color: ${({ theme }) => theme.color.white};
   box-shadow: 0 0 4px ${({ theme }) => theme.color.alto};

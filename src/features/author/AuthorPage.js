@@ -1,9 +1,10 @@
-import Container from "../../common/Container";
+
 import Footer from "../../common/Footer";
 import Header from "../../common/Header";
 import Section from "../../common/Section";
 import { Description, Image, Strong, Title, Wrapper, Youcode } from "./styled";
 import image from "./assets/Mateusz.jpg";
+import { Container } from "../../common/Section/styled";
 
 export default () => (
   <Container>
