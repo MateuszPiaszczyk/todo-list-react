@@ -10,6 +10,7 @@ export const Button = styled.button`
   color: ${({ theme }) => theme.color.teal};
   border: none;
   margin: 0 0 0 20px;
+  cursor: pointer;
   transition: color 0.5s;
 
   @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
