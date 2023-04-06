@@ -8,6 +8,10 @@ export const Wrapper = styled.div`
 
 export const Description = styled.div`
   line-height: 1.5;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const Strong = styled.strong`
@@ -18,6 +22,10 @@ export const Image = styled.img`
     display: grid:
     border-radius: 50%;
     max-width: 300px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const Title = styled.h2`
@@ -27,6 +35,5 @@ export const Title = styled.h2`
 `;
 
 export const Youcode = styled.span`
-    color: ${({ theme }) => theme.color.teal};
-    
+    color: ${({ theme }) => theme.color.teal};   
 `;
