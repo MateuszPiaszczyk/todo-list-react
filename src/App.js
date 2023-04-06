@@ -3,10 +3,9 @@ import AuthorPage from "./features/author/AuthorPage";
 import TasksPage from "./features/tasks/TasksPage";
 import TaskPage from "./features/tasks/TaskPage";
 import { toAuthor, toTask, toTasks } from "./routes";
-import Navigation from "./Navigation";
+import { Navigation } from "./common/Navigation";
 
-
-export default () => (
+export const App = () => (
     <HashRouter>
     <Navigation />
         <Switch>

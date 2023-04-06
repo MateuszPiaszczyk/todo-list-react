@@ -5,8 +5,8 @@ export const Wrapper = styled.div`
   grid-template-columns: auto 1fr;
   grid-gap: 20px;
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-    grid-template-columns: 1fr; 
-    }
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const Description = styled.div`
@@ -22,25 +22,22 @@ export const Strong = styled.strong`
 `;
 
 export const Image = styled.img`
-    display: grid:
-    border-radius: 50%;
-    max-width: 300px;
+  display: grid;
+  border-radius: 50%;
+  max-width: 300px;
 
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-<<<<<<< HEAD
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     max-width: 100%;
-=======
     grid-template-columns: 1fr;
->>>>>>> 702b64d9e2e76461c02e55db40cc8dc8e7b60cf8
   }
 `;
 
 export const Title = styled.h2`
-    color: ${({ theme }) => theme.color.teal};
-    padding-bottom: 10px;
-    margin: 0;   
+  color: ${({ theme }) => theme.color.teal};
+  padding-bottom: 10px;
+  margin: 0;
 `;
 
 export const Youcode = styled.span`
-    color: ${({ theme }) => theme.color.teal};   
+  color: ${({ theme }) => theme.color.teal};
 `;

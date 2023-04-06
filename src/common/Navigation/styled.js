@@ -8,9 +8,9 @@ export const StyledNavigation = styled.nav`
   margin: 0;
   padding: 0;
 `;
-export const StyledNavLink = styled(NavLink).attrs(() => ({
+export const StyledNavLink = styled(NavLink).attrs({
   activeClassName,
-}))`
+})`
   color: ${({ theme }) => theme.color.white};
   text-decoration: none;
   &.${activeClassName} {

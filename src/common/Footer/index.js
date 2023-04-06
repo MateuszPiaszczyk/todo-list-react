@@ -1,9 +1,11 @@
-import { StyledFooter, Link } from "./styled";
+import { StyledFooter } from "./styled";
 
-const Footer = ({ footer, link, author }) => (
+const AuthorPageLink = "https://github.com/MateuszPiaszczyk"
+
+const Footer = ({ footer, author }) => (
  <StyledFooter>
     {footer}
-    <Link href={link}>{author}</Link>
+    <AuthorPageLink>{author}</AuthorPageLink>
   </StyledFooter>
 );
 

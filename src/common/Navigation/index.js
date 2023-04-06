@@ -1,7 +1,7 @@
-import { toAuthor, toTasks } from "../routes";
+import { toAuthor, toTasks } from "../../routes";
 import { Item, List, StyledNavigation, StyledNavLink } from "./styled";
 
-export default () => {
+export const Navigation = () => {
     return (
         <StyledNavigation>
             <List>

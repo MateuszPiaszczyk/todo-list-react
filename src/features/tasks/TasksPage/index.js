@@ -9,14 +9,14 @@ import FetchExampleTaskButton from "./FetchExampleTaskButton";
 import { Container } from "../../../common/Section/styled";
 
 
-function TasksPage() {
+const TasksPage = () => {
   return (
     <Container>
       <Header title="Lista zadań - Todolist" />
       <Section
         title="➕ Dodaj nowe zadanie"
         body={<Form />}
-        plusHeaderContent={<FetchExampleTaskButton />}
+        additionalHeaderContent={<FetchExampleTaskButton />}
       />
       <Section 
         title=" 🔍 Szukajka" 
@@ -25,7 +25,7 @@ function TasksPage() {
       <Section
         title="📋 Lista twoich zadań"
         body={<TaskList />}
-        plusHeaderContent={<Buttons />}
+        additionalHeaderContent={<Buttons />}
       />
 
       <Footer

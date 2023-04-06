@@ -6,8 +6,7 @@ import { useSelector } from "react-redux";
 import { getTaskById } from "../tasksSlice";
 import { Container } from "../../../common/Section/styled";
 
-
-function TaskPage() {
+const TaskPage = () => {
   const { id } = useParams();
   const task = useSelector((state) => getTaskById(state, id));
 
