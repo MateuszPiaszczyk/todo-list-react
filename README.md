@@ -1,5 +1,5 @@
 # Todolist with React
-![Todolist App](https://piaszczykstudio.pl/wp-content/uploads/2023/04/todolist-finalapp.gif)
+![Todolist App](https://piaszczykstudio.pl/wp-content/uploads/2023/04/todosfinalapp.gif)
 
 # Description / Opis
 ENG: Todo list application, based on HTML,CSS,JS and BEM, created as part of a youcode course and skills exercises.
