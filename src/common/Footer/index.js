@@ -1,9 +1,13 @@
 import { StyledFooter, Link } from "./styled";
 
-const Footer = ({ footer, link, author }) => (
+const AuthorPageLink = "https://github.com/MateuszPiaszczyk";
+const FooterDescription = "Lista zadań - Todolist HTML/CSS/JS © 2023 created by";
+const Author = " Mateusz Piaszczyk";
+
+const Footer = () => (
  <StyledFooter>
-    {footer}
-    <Link href={link}>{author}</Link>
+    {FooterDescription}
+    <Link href={AuthorPageLink}>{Author}</Link>
   </StyledFooter>
 );
 
