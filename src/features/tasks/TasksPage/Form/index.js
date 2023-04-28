@@ -19,12 +19,14 @@ const Form = () => {
       return;
     }
 
-    dsipatch(addTask({
-      content: contentTrimmed,
-      done: false,
-      id: nanoid(),
-    }));
-   
+    dsipatch(
+      addTask({
+        content: contentTrimmed,
+        done: false,
+        id: nanoid(),
+      })
+    );
+
     setNewTaskContent("");
     inputRef.current.focus();
   };

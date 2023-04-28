@@ -8,13 +8,7 @@ import {
 } from "../../tasksSlice";
 import { useQueryParameter } from "../queryParameters";
 import searchQueryParamName from "../searchQueryParamName";
-import { 
-  List, 
-  Item, 
-  Content, 
-  Button, 
-  StyledNavLink
-} from "./styled";
+import { List, Item, Content, Button, StyledNavLink } from "./styled";
 
 const TaskList = () => {
   const query = useQueryParameter(searchQueryParamName);
@@ -31,7 +25,9 @@ const TaskList = () => {
             {task.done ? " ✓ " : ""}
           </Button>
           <Content done={task.done}>
-            <StyledNavLink to={toTask({ id: task.id })}>{task.content}</StyledNavLink>
+            <StyledNavLink to={toTask({ id: task.id })}>
+              {task.content}
+            </StyledNavLink>
           </Content>
           <Button remove onClick={() => dispatch(removeTask(task.id))}>
             🗑️

@@ -32,7 +32,7 @@ export const Content = styled.span`
 `;
 export const StyledNavLink = styled(Link)`
   color: ${({ theme }) => theme.color.teal};
-  text-decoration:none;
+  text-decoration: none;
 `;
 export const Button = styled.button`
   border: none;

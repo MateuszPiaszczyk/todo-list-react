@@ -16,5 +16,4 @@ export const StyledFooter = styled.footer`
 export const Link = styled.a`
   text-decoration: none;
   color: ${({ theme }) => theme.color.teal};
-  
 `;

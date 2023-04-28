@@ -8,7 +8,6 @@ import Search from "./Search";
 import FetchExampleTaskButton from "./FetchExampleTaskButton";
 import { Container } from "../../../common/Section/styled";
 
-
 const TasksPage = () => {
   return (
     <Container>
@@ -18,19 +17,16 @@ const TasksPage = () => {
         body={<Form />}
         additionalHeaderContent={<FetchExampleTaskButton />}
       />
-      <Section 
-        title=" 🔍 Szukajka" 
-        body={<Search />} 
-      />
+      <Section title=" 🔍 Szukajka" body={<Search />} />
       <Section
         title="📋 Lista twoich zadań"
         body={<TaskList />}
         additionalHeaderContent={<Buttons />}
       />
 
-      <Footer/>
+      <Footer />
     </Container>
   );
-}
+};
 
 export default TasksPage;

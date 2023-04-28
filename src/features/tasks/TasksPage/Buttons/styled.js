@@ -13,20 +13,20 @@ export const Button = styled.button`
   cursor: pointer;
   transition: color 0.5s;
 
-  @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-        flex-basis: 100%;
-        margin: 10px;
-    }
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    flex-basis: 100%;
+    margin: 10px;
+  }
 
-    &:hover {
-        filter: brightness(110%);
-    }
+  &:hover {
+    filter: brightness(110%);
+  }
 
-    &:active {
-        filter: brightness(130%);
-    }
+  &:active {
+    filter: brightness(130%);
+  }
 
-    &:disabled {
-        color: ${({ theme }) => theme.color.silver};
-    }
+  &:disabled {
+    color: ${({ theme }) => theme.color.silver};
+  }
 `;

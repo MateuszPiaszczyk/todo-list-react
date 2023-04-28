@@ -1,4 +1,3 @@
-
 import Footer from "../../common/Footer";
 import Header from "../../common/Header";
 import Section from "../../common/Section";

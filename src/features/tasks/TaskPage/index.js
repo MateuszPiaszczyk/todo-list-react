@@ -26,6 +26,6 @@ const TaskPage = () => {
       <Footer />
     </Container>
   );
-}
+};
 
 export default TaskPage;

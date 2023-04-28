@@ -16,13 +16,13 @@ export default () => {
       value: target.value.trim() !== "" ? target.value : undefined,
     });
   };
-    return (
-      <Wrapper>
-        <Input
-          placeholder="Filtruj zadania"
-          value={query || ""}
-          onChange={onInputChange}
-        />
-      </Wrapper>
-    );
-  };
+  return (
+    <Wrapper>
+      <Input
+        placeholder="Filtruj zadania"
+        value={query || ""}
+        onChange={onInputChange}
+      />
+    </Wrapper>
+  );
+};

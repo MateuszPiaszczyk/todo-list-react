@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
 `;
 
 export const Wrapper = styled.section`
@@ -27,10 +27,10 @@ export const Header = styled.header`
 `;
 
 export const Title = styled.h2`
-    font-size: 20px;
-    margin: 0;
+  font-size: 20px;
+  margin: 0;
 `;
 
 export const Body = styled.div`
-    padding: 20px;
+  padding: 20px;
 `;
