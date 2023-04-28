@@ -15,16 +15,8 @@ Nowe funkcje:
 Dodano przyciski. ukryj ukończone/wyświetl ukonczońe i zakończ wszystkie zadania
 
 # Technologies and practices used / Technologie i praktyki
-1. BEM
-3. JS
-4. HTML
-5. NORMALIZE
-6. ES6 + feutures
-7. Immuntabbility
-8. React
-9. Styled Components
-10. Redux
-11. React-Router
+`BEM` `JS ES6+ feutures` `NORMALIZE` `Imuuntability` `Styled-components` `React` `Redux` `React-Router`
+
 # Demo Link
 https://mateuszpiaszczyk.github.io/todo-list-react/
 
