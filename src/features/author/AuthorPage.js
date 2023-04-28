@@ -36,10 +36,6 @@ export default () => (
         </>
       }
     />
-    <Footer
-      footer="Lista zadań - Todolist HTML/CSS/JS &copy; 2023 created by"
-      link="https://github.com/MateuszPiaszczyk"
-      author=" Mateusz Piaszczyk"
-    />
+    <Footer />
   </Container>
 );
