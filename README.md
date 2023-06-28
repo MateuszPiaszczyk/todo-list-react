@@ -20,6 +20,11 @@ Dodano przyciski. ukryj ukończone/wyświetl ukonczońe i zakończ wszystkie zad
 # Demo Link
 https://mateuszpiaszczyk.github.io/todo-list-react/
 
+# Work in progress...
+
+added in the future: 
+1. DarkTheme,
+2. switching to TypeScript
 
 ## Available Scripts
 
